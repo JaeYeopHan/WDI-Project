@@ -1,0 +1,6 @@
+public/bundle.js
+node_modules/**
+build/**
+.idea/
+yarn-error.log
+dist/**
