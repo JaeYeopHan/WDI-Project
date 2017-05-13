@@ -1,4 +1,4 @@
-# React-Express Scaffolding project(temp)
+# React-Express-Mongodb project(temp)
 
 ## Development Environment
 * Node.js(with Express 4.15.2) + MongoDB(with Mongoose)
