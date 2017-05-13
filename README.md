@@ -1,6 +1,5 @@
 # React-Express-Mongodb project(temp)
 [![Build Status](https://travis-ci.org/JaeYeopHan/react_express_mongodb_prj.svg?branch=master)](https://travis-ci.org/JaeYeopHan/react_express_mongodb_prj)
-[![Node version](https://img.shields.io/node/v/[NPM-MODULE-NAME].svg?style=flat)](http://nodejs.org/download/)
 
 ## Project Description
 [...]
