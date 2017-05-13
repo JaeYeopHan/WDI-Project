@@ -9,6 +9,7 @@
 * Node.js(with Express 4.15.2)
 * mongodb(with mongoose)
 * React + Redux + (...React-Family)
+* d3
 * Webpack 2
 * TDD with mocha & chai
 * Travis CI
