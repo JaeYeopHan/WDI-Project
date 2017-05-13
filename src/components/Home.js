@@ -1,3 +1,11 @@
-/**
- * Created by Jbee on 2017. 5. 13..
- */
+import React from 'react';
+
+const Home = () => {
+    return (
+        <div>
+            Home
+        </div>
+    );
+};
+
+export default Home;

@@ -1,21 +1,30 @@
 import React from 'react';
+import {NavLink} from 'react-router-dom';
 import './Navigators.css';
 
 const Navigators = () => {
     return (
         <div className="Navigators">
-            <div className="btn one">
+            <NavLink
+                to="/"
+                className="btn">
+                Home
+            </NavLink>
+            <NavLink
+                to="/comp1"
+                className="btn one">
                 One
-            </div>
-            <div className="btn two">
+            </NavLink>
+            <NavLink
+                to="/comp2"
+                className="btn two">
                 Two
-            </div>
-            <div className="btn three">
+            </NavLink>
+            <NavLink
+                to="/comp3"
+                className="btn three">
                 Three
-            </div>
-            <div className="btn ">
-                Four
-            </div>
+            </NavLink>
         </div>
     );
 };
