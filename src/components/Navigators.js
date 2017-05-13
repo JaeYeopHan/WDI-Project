@@ -6,7 +6,7 @@ const Navigators = () => {
     return (
         <div className="Navigators">
             <NavLink
-                to="/"
+                exact to="/"
                 className="btn">
                 Home
             </NavLink>

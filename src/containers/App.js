@@ -17,7 +17,7 @@ class App extends Component {
                     <Navigators/>
                     <div>
                         <Switch>
-                            <Route path="/" component={Home}/>
+                            <Route exact path="/" component={Home}/>
                             <Route path="/comp1" component={Comp1}/>
                             <Route path="/comp2" component={Comp2}/>
                             <Route path="/comp3" component={Comp3}/>

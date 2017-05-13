@@ -9,11 +9,16 @@
   justify-content: center;
   height: 3rem;
 
-  color: #000;
+  color: #272822;
   font-size: 1.5rem;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .Navigators .btn:hover {
   background-color: #fff;
+}
+
+.Navigators .btn.active {
+  color: orange;
 }
