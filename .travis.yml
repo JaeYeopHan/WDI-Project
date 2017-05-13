@@ -3,4 +3,4 @@ node_js:
   - "6"
 install:
   - npm install
-script: mocha $(find ./ -name '*./test/**/*.test.js') --recursive -w
+script: babel server --out-dir build && webpack
