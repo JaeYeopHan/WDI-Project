@@ -4,8 +4,8 @@ import Webpack from 'webpack';
 import mongoose from 'mongoose';
 import bodyParser from 'body-parser';
 import morgan from 'morgan';
-import { dbConfig } from './config';
-import posts from './routes/posts';
+import {uri, option} from './config';
+import api from './routes/api';
 
 const app = express();
 const port = 3000;
@@ -20,14 +20,20 @@ if (process.env.NODE_ENV == 'development') {
     });
 }
 
-mongoose.connect(dbConfig.db, () => {
-    console.log('connected mongodb');
+const db = mongoose.connection;
+db.on('error', (err) => {
+    console.error(`Failed to connection ${uri}: ${err}`);
 });
+db.once('open', () => {
+    console.log(`connected mongodb to ${uri}`);
+});
+mongoose.connect(uri, option);
+
 app.use(morgan('dev'));
 app.use(bodyParser.json());
 
 app.use('/', express.static(__dirname + '/../dist'));
-app.use('/posts', posts);
+app.use('/api', api);
 
 app.listen(port, () => {
     console.log(`Listening on port: ${port}`);
