@@ -1,12 +1,12 @@
 import express from 'express';
-import {Test} from '../model';
+import { Test } from '../model';
 
 const router = express.Router();
 
 router.get('/get', (req, res) => {
     Test.find((err, values) => {
         if (err) {
-            return res.status(500).send({error: 'Failed find'});
+            return res.status(500).send({ error: 'Failed find' });
         }
         res.json(values);
     });
@@ -21,7 +21,7 @@ router.get('/post', (req, res) => {
             console.error(`Error in ${test} to save: ${err}`);
             return;
         }
-        res.send({result: 1});
+        res.send({ result: 1 });
     });
 });
 

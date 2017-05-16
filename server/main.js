@@ -4,7 +4,7 @@ import Webpack from 'webpack';
 import mongoose from 'mongoose';
 import bodyParser from 'body-parser';
 import morgan from 'morgan';
-import {uri, option} from './config';
+import { uri, option } from './config';
 import api from './routes/api';
 
 const app = express();
