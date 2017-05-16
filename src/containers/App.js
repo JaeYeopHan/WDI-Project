@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
+import { connect } from 'react-redux';
+import * as actions from '../modules';
+
 import Header from '../components/Header';
 import Navigators from '../components/Navigators';
 import Home from '../components/Home';
@@ -11,6 +14,7 @@ import NoMatch from '../components/NoMatch';
 
 class App extends Component {
     render() {
+        const { test } = this.props;
         return (
             <Router>
                 <div>
@@ -29,4 +33,8 @@ class App extends Component {
     }
 }
 
-export default App;
+const mapToDispatch = (dispatch) => ({
+    test: () => dispatch(actions.test())
+});
+
+export default connect(null, mapToDispatch)(App);
