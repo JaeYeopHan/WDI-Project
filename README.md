@@ -1,4 +1,4 @@
-# World Development Indicator
+# World Development Indicator Project (WDI-Project)
 [![Build Status](https://travis-ci.org/JaeYeopHan/react_express_mongodb_prj.svg?branch=master)](https://travis-ci.org/JaeYeopHan/react_express_mongodb_prj)
 
 ## Project Description
