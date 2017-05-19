@@ -1,8 +1,8 @@
-# React-Express-Mongodb project(temp)
+# World Development Indicator
 [![Build Status](https://travis-ci.org/JaeYeopHan/react_express_mongodb_prj.svg?branch=master)](https://travis-ci.org/JaeYeopHan/react_express_mongodb_prj)
 
 ## Project Description
-[...]
+The project is a React project that allows you to compare various development indicators of the world in graph form.
 
 ## Development Environment
 * Node.js(with Express 4.15.2)
