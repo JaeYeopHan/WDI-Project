@@ -6,7 +6,7 @@ import * as actions from '../modules';
 
 import { Header } from '../components/header';
 import { CategorySelector } from '../components/categorySelector';
-import Home from '../components/Home';
+import Default from '../components/Default';
 import Category from '../components/options/Category';
 import NoMatch from '../components/NoMatch';
 
@@ -19,7 +19,7 @@ class App extends Component {
                     <Header/>
                     <CategorySelector/>
                     <Switch>
-                        <Route exact path="/" component={ Home }/>
+                        <Route exact path="/" component={ Default }/>
                         <Route path="/1" component={ Category }/>
                         <Route path="/2" component={ Category }/>
                         <Route path="/3" component={ Category }/>

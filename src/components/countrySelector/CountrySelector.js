@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink, Route } from 'react-router-dom';
 
-import DefaultOption from '../options/DefaultPage';
+import Default from '../Default';
 import Country from '../options/Country';
 
 const CountrySelector = ({ match }) => {
@@ -31,7 +31,7 @@ const CountrySelector = ({ match }) => {
             </div>
             <Route
                 exact path={match.url}
-                render={DefaultOption}
+                render={Default}
             />
             <Route path={`${match.url}/a`} component={Country}/>
             <Route path={`${match.url}/b`} component={Country}/>
