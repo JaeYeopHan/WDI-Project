@@ -21,11 +21,11 @@ class App extends Component {
                     <Header/>
                     <Navigators/>
                     <Switch>
-                        <Route exact path="/" component={Home}/>
-                        <Route path="/comp1" component={Comp1}/>
-                        <Route path="/comp2" component={Comp2}/>
-                        <Route path="/comp3" component={Comp3}/>
-                        <Route component={NoMatch}/>
+                        <Route exact path="/" component={ Home }/>
+                        <Route path="/comp1" component={ Comp1 }/>
+                        <Route path="/comp2" component={ Comp2 }/>
+                        <Route path="/comp3" component={ Comp3 }/>
+                        <Route component={ NoMatch }/>
                     </Switch>
                 </div>
             </Router>
