@@ -1,6 +1,5 @@
-const chai = require('chai');
-const chaiHttp = require('chai-http');
-const expect = chai.expect;
+import chai, { expect } from 'chai';
+import chaiHttp from 'chai-http';
 chai.use(chaiHttp);
 const url = 'http://localhost:3000';
 
