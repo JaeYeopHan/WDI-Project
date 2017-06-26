@@ -1,28 +1,28 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import './Navigators.css';
+import './CategorySelector.css';
 
 const Navigators = () => {
     return (
         <div className="Navigators">
             <NavLink
-                exact to="/"
-                className="btn">
-                Home
-            </NavLink>
-            <NavLink
-                to="/comp1"
+                to="/1"
                 className="btn one">
                 One
             </NavLink>
             <NavLink
-                to="/comp2"
+                to="/2"
                 className="btn two">
                 Two
             </NavLink>
             <NavLink
-                to="/comp3"
+                to="/3"
                 className="btn three">
+                Three
+            </NavLink>
+            <NavLink
+                to="/4"
+                className="btn four">
                 Three
             </NavLink>
         </div>

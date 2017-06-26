@@ -4,12 +4,10 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { connect } from 'react-redux';
 import * as actions from '../modules';
 
-import Header from '../components/Header';
-import Navigators from '../components/Navigators';
+import { Header } from '../components/header';
+import { CategorySelector } from '../components/categorySelector';
 import Home from '../components/Home';
-import Comp1 from '../components/Comp1'
-import Comp2 from '../components/Comp2'
-import Comp3 from '../components/Comp3'
+import Category from '../components/options/Category';
 import NoMatch from '../components/NoMatch';
 
 class App extends Component {
@@ -19,12 +17,13 @@ class App extends Component {
             <Router>
                 <div>
                     <Header/>
-                    <Navigators/>
+                    <CategorySelector/>
                     <Switch>
                         <Route exact path="/" component={ Home }/>
-                        <Route path="/comp1" component={ Comp1 }/>
-                        <Route path="/comp2" component={ Comp2 }/>
-                        <Route path="/comp3" component={ Comp3 }/>
+                        <Route path="/1" component={ Category }/>
+                        <Route path="/2" component={ Category }/>
+                        <Route path="/3" component={ Category }/>
+                        <Route path="/4" component={ Category }/>
                         <Route component={ NoMatch }/>
                     </Switch>
                 </div>

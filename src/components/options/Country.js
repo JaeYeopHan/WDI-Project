@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Comp3 = () => {
+const Country = ({ match }) => {
     return (
         <div>
-            comp3
+            {match.url}
         </div>
     );
 };
 
-export default Comp3;
+export default Country;
