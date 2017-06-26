@@ -9,7 +9,7 @@
     "start": "NODE_ENV=production node ./build/main.js",
     "dev": "NODE_ENV=development node ./build/main.js",
     "server": "babel server --out-dir build && webpack && NODE_ENV=development node ./build/main.js",
-    "test": "mocha --require babel-register $(find ./ -name '*./test/**/*.test.js') --recursive -w"
+    "test": "mocha --require babel-register --require ignore-styles $(find ./ -name '*./test/**/*.test.js') --recursive -w"
   },
   "author": "Jbee",
   "license": "ISC",
@@ -43,6 +43,7 @@
     "css-loader": "^0.28.1",
     "extract-text-webpack-plugin": "^2.1.0",
     "html-webpack-plugin": "^2.28.0",
+    "ignore-styles": "^5.0.1",
     "jquery": "^3.2.1",
     "jsdom": "^11.0.0",
     "mocha": "^3.3.0",
