@@ -1,10 +1,9 @@
 import React from 'react';
+import { Board } from '../../containers/board';
 
 const Country = ({ match }) => {
     return (
-        <div>
-            {match.url}
-        </div>
+        <Board url={match.url}/>
     );
 };
 
