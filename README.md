@@ -1,5 +1,5 @@
 # World Development Indicator Project (WDI-Project)
-[![Build Status](https://travis-ci.org/JaeYeopHan/react_express_mongodb_prj.svg?branch=master)](https://travis-ci.org/JaeYeopHan/react_express_mongodb_prj)  
+[![Build Status](https://travis-ci.org/JaeYeopHan/WDI-Project.svg?branch=master)](https://travis-ci.org/JaeYeopHan/WDI-Project)  
 
 ## Project Description
 The project is a React project that allows you to compare various development indicators of the world in graph form.
